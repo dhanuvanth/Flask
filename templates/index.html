@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Hello World
+        </title>
+    </head>
+    <body>
+
+        <h1>Welcome To Python</h1>
+
+        <p>I am {{content}}</p>
+
+        {% for x in lst%}
+
+            {% if x == "joe" %}
+                <p>Hi {{x}}</p>
+            {% elif x == "tony" %}
+                <p>Hello {{x}}</p>
+            {% else %}
+                <p>Hey {{x}}</p>
+            {% endif %}
+            
+        {% endfor%}
+    </body>
+</html>
